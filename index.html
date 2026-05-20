@@ -49,6 +49,17 @@
         <div class="dz-hint">Sleep of klik — .xlsx / .xls</div>
         <div class="dz-filename" id="fn-moeder">—</div>
       </div>
+      <div class="sp-toggle-wrap">
+        <label class="sp-toggle">
+          <input type="checkbox" id="sp-toggle-moeder" onchange="toggleSP('moeder')">
+          <span>🔗 Laden via SharePoint URL</span>
+        </label>
+        <div class="sp-url-wrap" id="sp-wrap-moeder">
+          <input class="sp-url-input" id="sp-url-moeder"
+            placeholder="https://ihcmerwede.sharepoint.com/…/Moederlijst.xlsx">
+          <button class="btn-sp-load" onclick="loadFromSP('moeder')">⬇ Laden</button>
+        </div>
+      </div>
 
       <div class="drop-zone" id="dz-expediting">
         <input type="file" id="file-expediting" accept=".xlsx,.xls,.xlsm" onchange="handleFile(event,'expediting')">
@@ -57,6 +68,17 @@
         <div class="dz-meta">Blad: Sheet 1 (automatisch)<br>Kolom A = lookup &amp; return array</div>
         <div class="dz-hint">Sleep of klik — .xlsx / .xls</div>
         <div class="dz-filename" id="fn-expediting">—</div>
+      </div>
+      <div class="sp-toggle-wrap">
+        <label class="sp-toggle">
+          <input type="checkbox" id="sp-toggle-expediting" onchange="toggleSP('expediting')">
+          <span>🔗 Laden via SharePoint URL</span>
+        </label>
+        <div class="sp-url-wrap" id="sp-wrap-expediting">
+          <input class="sp-url-input" id="sp-url-expediting"
+            placeholder="https://ihcmerwede.sharepoint.com/…/Expediting.xlsx">
+          <button class="btn-sp-load" onclick="loadFromSP('expediting')">⬇ Laden</button>
+        </div>
       </div>
     </div>
 

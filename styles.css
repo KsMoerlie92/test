@@ -699,3 +699,16 @@ td strong { color: var(--white); }
   .content-panel { padding: 1.5rem; }
   .stats-strip { grid-template-columns: repeat(3, 1fr); }
 }
+
+/* ── SharePoint URL loader ── */
+.sp-toggle-wrap { margin-top: .5rem; }
+.sp-toggle { display:flex;align-items:center;gap:.45rem;cursor:pointer;font-family:var(--mono);font-size:.68rem;color:var(--muted);user-select:none; }
+.sp-toggle input[type=checkbox] { accent-color:var(--teal); width:13px;height:13px; }
+.sp-toggle:hover { color:var(--teal); }
+.sp-url-wrap { display:none;margin-top:.4rem;display:flex;gap:.3rem;align-items:center; }
+.sp-url-wrap.visible { display:flex; }
+.sp-url-input { flex:1;font-family:var(--mono);font-size:.63rem;padding:.32rem .5rem;background:var(--navy);border:1px solid var(--steel);color:var(--text);border-radius:2px;outline:none;min-width:0; }
+.sp-url-input:focus { border-color:var(--teal); }
+.btn-sp-load { font-family:var(--mono);font-size:.63rem;font-weight:700;padding:.3rem .65rem;background:var(--teal);color:#000;border:none;border-radius:2px;cursor:pointer;white-space:nowrap; }
+.btn-sp-load:hover { background:#00d4fa; }
+.btn-sp-load:disabled { opacity:.5;cursor:not-allowed; }
