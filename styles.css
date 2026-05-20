@@ -40,7 +40,7 @@ body::after {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: url('../img/bg0.png');
+  background-image: url('img/bg0.png');
   background-size: cover;
   background-position: center 40%;
   opacity: 0.07;
@@ -64,7 +64,7 @@ body::after {
 
 .header-bg {
   position: absolute; inset: 0;
-  background-image: url('../img/bg1.png');
+  background-image: url('img/bg1.png');
   background-size: cover;
   background-position: center 35%;
   opacity: 0.55;
@@ -207,7 +207,7 @@ body::after {
   position: absolute;
   bottom: 0; left: 0; right: 0;
   height: 220px;
-  background-image: url('../img/bg2.jpg');
+  background-image: url('img/bg2.jpg');
   background-size: cover;
   background-position: center top;
   opacity: .18;
