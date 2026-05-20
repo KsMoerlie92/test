@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Royal IHC — Logistics Tools</title>
+  <style>
+    :root {
+      --red:   #D91F2C;
+      --navy:  #0A1628;
+      --teal:  #00B4D8;
+      --white: #F0F4FA;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .logo { font-size: 2rem; font-weight: 900; letter-spacing: .04em; margin-bottom: 2rem; }
+    .logo span { background: var(--red); color: #fff; padding: .1em .35em; border-radius: 4px; margin-left: .25em; }
+    h1 { font-size: 1.1rem; font-weight: 400; color: rgba(240,244,250,.6); margin-bottom: 3rem; letter-spacing: .06em; text-transform: uppercase; }
+    .cards { display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
+    .card {
+      background: #0F2040;
+      border: 1px solid #1e3a6e;
+      border-radius: 8px;
+      padding: 2rem 2.5rem;
+      width: 280px;
+      text-decoration: none;
+      color: var(--white);
+      transition: border-color .2s, transform .15s;
+      text-align: center;
+    }
+    .card:hover { border-color: var(--teal); transform: translateY(-3px); }
+    .card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .card-title { font-size: 1.1rem; font-weight: 700; margin-bottom: .5rem; }
+    .card-desc { font-size: .8rem; color: rgba(240,244,250,.55); line-height: 1.6; }
+    .card-badge {
+      display: inline-block;
+      margin-top: .8rem;
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      border: 1px solid var(--teal);
+      border-radius: 3px;
+      padding: .2em .6em;
+    }
+    footer { margin-top: 4rem; font-size: .7rem; color: rgba(240,244,250,.3); letter-spacing: .06em; }
+  </style>
+</head>
+<body>
+  <div class="logo">Royal <span>IHC</span></div>
+  <h1>Logistics Tools — Expediting &amp; Shipment</h1>
+
+  <div class="cards">
+    <a class="card" href="/po-matcher">
+      <div class="card-icon">🔍</div>
+      <div class="card-title">PO Matcher</div>
+      <div class="card-desc">
+        Koppel Expediting lijst aan Moederlijst via XLOOKUP op PO + Item #.
+        Export naar Excel, legplan en container advies.
+      </div>
+      <span class="card-badge">Expediting</span>
+    </a>
+
+    <a class="card" href="/legplan">
+      <div class="card-icon">📦</div>
+      <div class="card-title">Legplan &amp; CIPL</div>
+      <div class="card-desc">
+        3D container packing visualisatie, CIPL document generatie met
+        handtekening en AI-advies voor laadvolgorde.
+      </div>
+      <span class="card-badge">Shipment</span>
+    </a>
+  </div>
+
+  <footer>Royal IHC — Intern gebruik · Logistics &amp; Expediting</footer>
+</body>
+</html>
